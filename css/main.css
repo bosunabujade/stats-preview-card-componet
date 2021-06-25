@@ -1,0 +1,48 @@
+/*----------------------- General Styles --------------------------*/
+html{
+    background-color: #090b1a;
+    font-size: 15px;
+}
+body {
+background-color: #1b1938;
+color: white;
+font-family: 'Lexend Deca', sans-serif;
+font-size: 1rem;
+
+}
+
+.insights {
+    color:#aa5cdb;
+}
+
+.stats {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.stat-heading {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+}
+
+.header-image {
+    background: linear-gradient(to right, rgba(170, 92, 219, 0.5), rgba(170, 92, 219,.5)), url("../img/image-header-mobile.jpg") no-repeat;
+    height: 480px;
+} 
+
+
+.attribution {
+     font-size: 11px; text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/*----------------------- Mobile Styles --------------------------*/
