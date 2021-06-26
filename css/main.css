@@ -7,7 +7,7 @@ background-color: #090b1a;
 color: white;
 font-family: 'Lexend Deca', sans-serif;
 font-size: 1rem;
-margin: 0 auto;
+margin: 20px auto;
 }
 .container {
     background-color: #1b1938;
@@ -39,14 +39,9 @@ p {
     font-size: 1rem;
 }
 
-.header-image {
-    background: linear-gradient(to right, rgba(170, 91, 219, 0.5), rgba(170, 91, 219,.5)), url("../img/image-header-mobile.jpg") no-repeat;
-    filter: contrast(150%);
-} 
-
 
 .attribution {
-     font-size: 1em;
+     font-size: .60em;
     text-align: center; 
     }
 .attribution a { 
@@ -54,9 +49,7 @@ p {
 }
 /*----------------------- Mobile Styles --------------------------*/
 body {
-    width: 375px;
-    display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -70,12 +63,16 @@ body {
     border-radius: 10px;
 }
 .header-image {
+    background: linear-gradient(to right, rgba(170, 91, 219, 0.5), rgba(170, 91, 219,.5)), url("../img/image-header-mobile.jpg") no-repeat;
+    filter: contrast(150%);
     background-size: cover;
     width: 350px;
     height: 256px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
 }
+
 h1 {
     justify-content: center;
     align-items: center;
@@ -83,7 +80,7 @@ h1 {
     padding-right: 20px;
     
 }
-p {
+.blurb {
     justify-content: center;
     align-items: center;
     padding-left: 40px;
@@ -95,12 +92,88 @@ p {
     justify-content: center;
     align-items: center;
     padding-top: 0;
+    line-height: 1.75rem;
+
 }
 .stats {
 justify-content: center;
 padding: 7px;
 }
- .stat-heading {
+.stat-heading {
      padding: 10px;
      letter-spacing: 1.5px;
+ }
+
+
+
+ /*----------------------- Desktop Styles --------------------------*/
+ @media only screen and (min-width:1440px) {
+
+    body {
+        margin: 150px auto;
+    }
+ 
+    .container {
+        flex-flow: row-reverse;
+        align-items: flex-start;
+        text-align: left;
+        width: 1200px;
+        height: 400px;
+
+    }
+    .header-image {
+        display: none;
+    }
+    .desktop-image {
+        display: flex;
+        background: linear-gradient(to right, rgba(170, 91, 219, 0.5), rgba(170, 91, 219,.5)), url("../img/image-header-desktop.jpg") no-repeat;
+        filter: contrast(150%);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+    .content {
+        width: 50%;
+    }
+
+    h1 {
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 2.75rem;
+        width: 75%;
+        padding: 20px 50px 5px 50px;
+        
+    }
+    .blurb {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 70%;
+        padding: 0 50px 10px 50px;
+        font-size: 1rem;
+       
+    }
+    
+    .stat-section {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width: 65%;
+        padding: 10px 50px 10px 50px;
+        margin: 0 ;
+
+    }
+    .stats {
+    text-align: left;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    }
+    .stat-heading {
+        margin: 0;
+        padding: 0;
+        
+    }
+
  }
